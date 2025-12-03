@@ -1,23 +1,23 @@
 {
   "name": "trk-quotation-backend",
   "version": "1.0.0",
-  "main": "index.js",
- "scripts": {
-  "start": "node dist/server.js",
-  "build": "tsc",
-  "dev": "nodemon",
-  "lint": "eslint . --ext .ts",
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "prepare": "husky",
-  "format": "prettier --write ."
-},
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "nodemon src/server.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "format": "prettier --write ."
+  },
   "lint-staged": {
     "*.{js,ts,tsx,json,md}": "prettier --write"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.940.0",
     "@aws-sdk/s3-request-presigner": "^3.940.0",
