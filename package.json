@@ -2,15 +2,15 @@
   "name": "trk-quotation-backend",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "ts-node src/server.ts",
-    "build": "tsc",
-    "dev": "nodemon",
-    "lint": "eslint . --ext .ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky",
-    "format": "prettier --write ."
-  },
+ "scripts": {
+  "start": "node dist/server.js",
+  "build": "tsc",
+  "dev": "nodemon",
+  "lint": "eslint . --ext .ts",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "prepare": "husky",
+  "format": "prettier --write ."
+},
   "lint-staged": {
     "*.{js,ts,tsx,json,md}": "prettier --write"
   },
